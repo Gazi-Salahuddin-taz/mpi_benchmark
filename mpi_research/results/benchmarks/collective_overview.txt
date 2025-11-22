@@ -1,0 +1,69 @@
+=== Collective Operations Comprehensive Benchmark ===
+Testing: Broadcast, Allreduce, Reduce, Allgather, Barrier
+
+--- Benchmarking Broadcast ---
+  Size 1: 0.00063194 ms
+  Size 4: 0.00029972 ms
+  Size 16: 0.00032824 ms
+  Size 64: 0.00149016 ms
+  Size 256: 0.0021445 ms
+  Size 1024: 0.00741616 ms
+  Size 4096: 0.0151177 ms
+  Size 16384: 0.0647315 ms
+  Size 65536: 0.14106 ms
+  Size 262144: 0.654814 ms
+
+--- Benchmarking Allreduce ---
+  Size 1: 0.00141468 ms
+  Size 4: 0.00242788 ms
+  Size 16: 0.00151258 ms
+  Size 64: 0.00276838 ms
+  Size 256: 0.00623998 ms
+  Size 1024: 0.0158965 ms
+  Size 4096: 0.034178 ms
+  Size 16384: 0.101113 ms
+  Size 65536: 0.379945 ms
+  Size 262144: 2.20251 ms
+
+--- Benchmarking Reduce ---
+  Size 1: 0.00164322 ms
+  Size 4: 0.0017084 ms
+  Size 16: 0.00371148 ms
+  Size 64: 0.00222482 ms
+  Size 256: 0.00377044 ms
+  Size 1024: 0.0168591 ms
+  Size 4096: 0.0493654 ms
+  Size 16384: 0.179391 ms
+  Size 65536: 0.469678 ms
+  Size 262144: 5.24403 ms
+
+--- Benchmarking Allgather ---
+  Size 1: 0.00119348 ms
+  Size 4: 0.00112666 ms
+  Size 16: 0.00187516 ms
+  Size 64: 0.0024982 ms
+  Size 256: 0.00403768 ms
+  Size 1024: 0.0112571 ms
+  Size 4096: 0.0261754 ms
+  Size 16384: 0.0978987 ms
+  Size 65536: 0.472362 ms
+  Size 262144: 5.45533 ms
+
+--- Benchmarking Barrier ---
+  Barrier: 0.00087184 ms
+
+=== Collective Benchmark Report Generated ===
+
+=== Collective Operations Analysis ===
+Message Size: 1 elements
+  Broadcast/Allreduce ratio: 0.446702
+  Reduce/Allreduce ratio: 1.16155
+  Allgather/Allreduce ratio: 0.84364
+Message Size: 1024 elements
+  Broadcast/Allreduce ratio: 0.466529
+  Reduce/Allreduce ratio: 1.06056
+  Allgather/Allreduce ratio: 0.708154
+Message Size: 65536 elements
+  Broadcast/Allreduce ratio: 0.371264
+  Reduce/Allreduce ratio: 1.23617
+  Allgather/Allreduce ratio: 1.24324

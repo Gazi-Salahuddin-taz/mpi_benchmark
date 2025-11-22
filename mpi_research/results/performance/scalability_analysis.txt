@@ -1,0 +1,35 @@
+=== Comprehensive Scalability Analysis ===
+Base Processes: 2
+Max Processes: 4
+Step Size: 2
+
+--- Strong Scaling Analysis ---
+Testing with 2 processes...
+  Time: 0.167366 ms, Efficiency: 100%
+Testing with 4 processes...
+  Time: 0.224477 ms, Efficiency: 37.2792%
+
+--- strong_scaling Metrics Analysis ---
+Processes: 2, Time: 0.167366 ms, Speedup: 1, Efficiency: 100%, Scaled Speedup: 50%
+Processes: 4, Time: 0.224477 ms, Speedup: 0.745584, Efficiency: 37.2792%, Scaled Speedup: 18.6396%
+
+--- Scalability Factors ---
+Estimated Serial Fraction: 100%
+Efficiency Drop Rate: 62.7208% per doubling
+
+--- Weak Scaling Analysis ---
+Testing with 2 processes...
+  Time: 0.0125718 ms, Efficiency: 100%
+Testing with 4 processes...
+  Time: 0.0187214 ms, Efficiency: 67.152%
+
+--- weak_scaling Metrics Analysis ---
+Processes: 2, Time: 0.0125718 ms, Speedup: 1, Efficiency: 100%, Scaled Speedup: 50%
+Processes: 4, Time: 0.0187214 ms, Speedup: 0.67152, Efficiency: 33.576%, Scaled Speedup: 16.788%
+
+--- Scalability Factors ---
+Estimated Serial Fraction: 100%
+Efficiency Drop Rate: 66.424% per doubling
+
+--- Algorithm Scalability Comparison ---
+Processes: 2

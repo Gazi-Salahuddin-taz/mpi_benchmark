@@ -1,0 +1,13 @@
+MPI Research Project Installation Log
+Started: Sat Nov 22 02:40:44 CST 2025
+======================================
+[0;34m[INFO][0m Starting MPI Research Project dependency installation
+[0;34m[INFO][0m Installation type: full
+[0;34m[INFO][0m Project root: /home/gazi/wangyl/mpi_research
+[0;34m[INFO][0m Creating project directory structure...
+[0;32m[SUCCESS][0m Directory structure created
+[0;34m[INFO][0m Installing system dependencies for linux using apt...
+[0;32m[SUCCESS][0m System dependencies installed
+[0;34m[INFO][0m Installing Python dependencies...
+[0;32m[SUCCESS][0m Python dependencies installed
+[0;34m[INFO][0m Installing NS-3 dependencies...
